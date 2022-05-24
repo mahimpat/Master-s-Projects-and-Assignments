@@ -5,7 +5,7 @@
 
 ### Assignment 1 (Sentiment Analysis with Logistic Regression)
 ```markdown
-The goal of this assignment is to develop and test a text classification system for sentiment analysis, in particular to predict the sentiment of movie reviews, i.e. positive or negative (binary classification).
+**The goal of this assignment is to develop and test a text classification system for sentiment analysis, in particular to predict the sentiment of movie reviews, i.e. positive or negative (binary classification).**
 For that purpose, you will implement:
 - Text processing methods for extracting Bag-Of-Word features, using n-grams (BOW), i.e. unigrams, bigrams and trigrams to obtain vector representations of documents where n=1,2,3 respectively. Two vector weighting schemes should be tested: (1) raw frequencies (1 mark); (2) tf.idf (1 mark). 
 - character n-grams (BOCN). A character n-gram is a contiguous sequence of characters given a word, e.g. for n=2, 'coffee' is split into {'co', 'of', 'ff', 'fe', 'ee'}. Two vector weighting schemes should be tested: (1) raw frequencies (1 mark); (2) tf.idf (1 mark). Tip: Note the large vocabulary size!
