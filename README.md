@@ -1,4 +1,4 @@
-## Welcome to NLP repository
+## Welcome to Master's repository
 
 ## COM 6513
 
