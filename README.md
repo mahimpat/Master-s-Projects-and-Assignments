@@ -30,7 +30,7 @@ For that purpose, you will implement:
 - Provide efficient solutions by using Numpy arrays when possible (you can find tips in Lab 1 sheet). Executing the whole notebook with your code should not take more than 5 minutes on a any standard computer (e.g. Intel Core i5 CPU, 8 or 16GB RAM) excluding hyperparameter tuning runs (2 marks).
 ```
 ### Assignment 2 (Topic Classification with a Feedforward Network)
-```
+```markdown
 
 **The goal of this assignment is to develop a Feedforward neural network for topic classification.**
 For that purpose, you will implement:
@@ -72,10 +72,4 @@ your choices (2 marks).
 notebook with your code should not take more than 10 minutes on any standard computer
 (e.g. Intel Core i5 CPU, 8 or 16GB RAM) excluding hyperparameter tuning runs and loading
 the pretrained vectors. You can find tips in Lab 1 (2 marks).
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mahimpat/Master-s-Projects-and-Assignments/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+```
