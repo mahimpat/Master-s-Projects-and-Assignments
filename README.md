@@ -1,10 +1,9 @@
 ## Projects Repository
-```markdown
+
 Hello! Welcome to Mahim Patil's Projects Repository.
 
 About Me - I am Mahim Patil, 24 years, from Hubli, India. I am currently pursuing master's in Cybersecurity and Artificial Intelligence at the University of Sheffield, UK. I have completed bachelor's in computer science engineering at KLE Technological University, India. I have 1 year experience as full stack web developer at forem software, hubli, India. Currently looking for entry level cybersecurity roles specifically cybersecurity engineer.
 
-```
 
 
 ## PG Course -> Folder Name
