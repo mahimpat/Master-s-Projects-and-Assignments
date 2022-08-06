@@ -1,4 +1,4 @@
-## Welcome to Master's repository
+## Projects Repository
 
 ## COM 6513
 
