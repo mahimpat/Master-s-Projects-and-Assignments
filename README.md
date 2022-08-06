@@ -32,8 +32,46 @@ For that purpose, you will implement:
 ### Assignment 2 (Topic Classification with a Feedforward Network)
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
+** The goal of this assignment is to develop a Feedforward neural network for topic classification. **
+For that purpose, you will implement:
+• Text processing methods for transforming raw text data into input vectors for your network
+(1 mark)
+• A Feedforward network consisting of:
+– One-hot input layer mapping words into an Embedding weight matrix (1 mark)
+– One hidden layer computing the mean embedding vector of all words in input followed by a ReLU activation function (1 mark)
+– Output layer with a softmax activation. (1 mark)
+• The Stochastic Gradient Descent (SGD) algorithm with back-propagation to learn the
+weights of your Neural network. Your algorithm should:
+– Use (and minimise) the Categorical Cross-entropy loss function (1 mark)
+– Perform a Forward pass to compute intermediate outputs (3 marks)
+– Perform a Backward pass to compute gradients and update all sets of weights (6 marks)
+– Implement and use Dropout after each hidden layer for regularisation (2 marks)
+• Discuss how did you choose hyperparameters? You can tune the learning rate (hint: choose
+small values), embedding size {e.g. 50, 300, 500}, the dropout rate {e.g. 0.2, 0.5} and the
+learning rate. Please use tables or graphs to show training and validation performance for
+each hyperparameter combination (2 marks).
+• After training a model, plot the learning process (i.e. training and validation loss in each
+epoch) using a line plot and report accuracy. Does your model overfit, underfit or is about
+right? (1 mark).
+• Re-train your network by using pre-trained embeddings (GloVe) trained on large corpora.
+Instead of randomly initialising the embedding weights matrix, you should initialise it with
+the pre-trained weights. During training, you should not update them (i.e. weight freezing)
+1
+and backprop should stop before computing gradients for updating embedding weights.
+Report results by performing hyperparameter tuning and plotting the learning process. Do
+you get better performance? (3 marks).
+• Extend you Feedforward network by adding more hidden layers (e.g. one more or two).
+How does it affect the performance? Note: You need to repeat hyperparameter tuning, but
+the number of combinations grows exponentially. Therefore, you need to choose a subset of
+all possible combinations (4 marks)
+• Provide well documented and commented code describing all of your choices. In general,
+you are free to make decisions about text processing (e.g. punctuation, numbers, vocabulary
+size) and hyperparameter values. We expect to see justifications and discussion for all of
+your choices (2 marks).
+• Provide efficient solutions by using Numpy arrays when possible. Executing the whole
+notebook with your code should not take more than 10 minutes on any standard computer
+(e.g. Intel Core i5 CPU, 8 or 16GB RAM) excluding hyperparameter tuning runs and loading
+the pretrained vectors. You can find tips in Lab 1 (2 marks).
 ### Jekyll Themes
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mahimpat/Master-s-Projects-and-Assignments/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
