@@ -1,6 +1,6 @@
 ## Projects Repository
 
-## COM 6513
+## COM 6513 (Natural Language Processing)
 
 
 ### Assignment 1 (Sentiment Analysis with Logistic Regression)
