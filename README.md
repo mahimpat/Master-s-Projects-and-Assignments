@@ -32,7 +32,7 @@ For that purpose, you will implement:
 ### Assignment 2 (Topic Classification with a Feedforward Network)
 ```
 
-** The goal of this assignment is to develop a Feedforward neural network for topic classification. **
+**The goal of this assignment is to develop a Feedforward neural network for topic classification.**
 For that purpose, you will implement:
 • Text processing methods for transforming raw text data into input vectors for your network
 (1 mark)
