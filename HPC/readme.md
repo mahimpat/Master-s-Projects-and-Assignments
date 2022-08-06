@@ -3,38 +3,39 @@
 
 ### Assignment 1 (Scalable supervised learning to study the Vulnerability of Resource-Constraint Internet of Things)
 ```markdown
-**Scalable supervised learning to study the Vulnerability of
-Resource-Constraint Internet of Things.**
+
+**Scalable supervised learning to study the Vulnerability of Resource-Constraint Internet of Things.**
 You will apply Random Forests, Logistic Regression (including regularisation) and (shallow)
 Neural networks over a subset of the dataset and over the full dataset. As performance
 measures use classification accuracy.
-1. Working with a subset of the larger dataset. Use pipelines and cross-validation to find the
+
+- Working with a subset of the larger dataset. Use pipelines and cross-validation to find the
 best configuration of parameters for each model [8 marks]
-a. For finding the best configuration of parameters, use 1% of the data chosen
+    a. For finding the best configuration of parameters, use 1% of the data chosen
 randomly from the training set [2 marks]
-b. Use a sensible grid for the parameters (for example, at least the three most relevant
+    b. Use a sensible grid for the parameters (for example, at least the three most relevant
 parameters with at least three options for each parameter) for each predictive
 model:
-i. Pipeline and cross-validation for random forests [2 marks]
-ii. Pipeline and cross-validation for logistic regression [2 marks]
-iii. Pipeline and cross-validation for neural networks [2 marks]
+        i. Pipeline and cross-validation for random forests [2 marks]
+        ii. Pipeline and cross-validation for logistic regression [2 marks]
+        iii. Pipeline and cross-validation for neural networks [2 marks]
 Please, use the batch mode to work on this. Although the dataset is not as large, the
 batch mode allows queueing jobs and for the cluster to better allocate resources.
-2. Working with the larger dataset. Once you have found the best parameter configurations
+- Working with the larger dataset. Once you have found the best parameter configurations
 for each algorithm in the smaller subset of the data, use the full dataset to train on the
 whole training data and compare the performance of the three algorithms on the test data
 [8 marks]
-a. Use the best parameters found for each model in the smaller dataset of the
+    a. Use the best parameters found for each model in the smaller dataset of the
 previous step, for the models used in this step. You need to pass these parameters
 programmatically. Do not hard-code them. [2 marks]
-b. Provide accuracy, area under the curve, training time and testing time when using
+    b. Provide accuracy, area under the curve, training time and testing time when using
 five CORES and ten CORES for each of the predictive models using
 train_5xor_128dim.csv for training and test_5xor_128dim.csv for testing.
-i. Five and ten cores results for random forests [2 marks]
-ii. Five and ten cores results for logistic regression [2 marks]
-iii. Five and ten cores results for neural networks [2 marks]
+        i. Five and ten cores results for random forests [2 marks]
+        ii. Five and ten cores results for logistic regression [2 marks]
+        iii. Five and ten cores results for neural networks [2 marks]
 Remember to use the batch mode to work on this.
-3. Discuss at least four observations (e.g., anything interesting), with two to three sentences
+- Discuss at least four observations (e.g., anything interesting), with two to three sentences
 for each observation. If you need to, you can run additional experiments that help you to
 provide these observations [4 marks] (one mark per observation)
 
