@@ -1,31 +1,43 @@
 ## COM 6012 (Scalable Machine Learning)
 
 
-### Assignment 1 (Sentiment Analysis with Logistic Regression)
+### Assignment 1 (Scalable supervised learning to study the Vulnerability of Resource-Constraint Internet of Things)
 ```markdown
-**The goal of this assignment is to develop and test a text classification system for sentiment analysis, in particular to predict the sentiment of movie reviews, i.e. positive or negative (binary classification).**
-For that purpose, you will implement:
-- Text processing methods for extracting Bag-Of-Word features, using n-grams (BOW), i.e. unigrams, bigrams and trigrams to obtain vector representations of documents where n=1,2,3 respectively. Two vector weighting schemes should be tested: (1) raw frequencies (1 mark); (2) tf.idf (1 mark). 
-- character n-grams (BOCN). A character n-gram is a contiguous sequence of characters given a word, e.g. for n=2, 'coffee' is split into {'co', 'of', 'ff', 'fe', 'ee'}. Two vector weighting schemes should be tested: (1) raw frequencies (1 mark); (2) tf.idf (1 mark). Tip: Note the large vocabulary size!
-- a combination of the two vector spaces (n-grams and character n-grams) choosing your best performing wighting respectively (i.e. raw or tfidf). (1 mark) Tip: you should merge the two representations
-- Binary Logistic Regression (LR) classifiers that will be able to accurately classify movie reviews trained with:
-  1. BOW-count (raw frequencies) 
-  2. BOW-tfidf (tf.idf weighted)
-  3. BOCN-count
-  4. BOCN-tfidf
-  5. BOW+BOCN (best performing weighting; raw or tfidf)
-- The Stochastic Gradient Descent (SGD) algorithm to estimate the parameters of your Logistic Regression models. Your SGD algorithm should:
-  1. Minimise the Binary Cross-entropy loss function (1 mark)
-  2. Use L2 regularisation (1 mark)
-  3. Perform multiple passes (epochs) over the training data (1 mark)
-  4. Randomise the order of training data after each pass (1 mark)
-  5. Stop training if the difference between the current and previous development loss is smaller than a threshold (1 mark)
-  6. After each epoch print the training and development loss (1 mark)
-- Discuss how did you choose hyperparameters (e.g. learning rate and regularisation strength) for each LR model? You should use a table showing model performance using different set of hyperparameter values. (2 marks). Tip: Instead of using all possible combinations, you could perform a random sampling of combinations.**
-- After training each LR model, plot the learning process (i.e. training and validation loss in each epoch) using a line plot. Does your model underfit, overfit or is it about right? Explain why. (1 mark).
-- Identify and show the most important features (model interpretability) for each class (i.e. top-10 most positive and top-10 negative weights). Give the top 10 for each class and comment on whether they make sense (if they don't you might have a bug!). If you were to apply the classifier into a different domain such laptop reviews or restaurant reviews, do you think these features would generalise well? Can you propose what features the classifier could pick up as important in the new domain? (2 marks)
-- Provide well documented and commented code describing all of your choices. In general, you are free to make decisions about text processing (e.g. punctuation, numbers, vocabulary size) and hyperparameter values. We expect to see justifications and discussion for all of your choices (2 marks).
-- Provide efficient solutions by using Numpy arrays when possible (you can find tips in Lab 1 sheet). Executing the whole notebook with your code should not take more than 5 minutes on a any standard computer (e.g. Intel Core i5 CPU, 8 or 16GB RAM) excluding hyperparameter tuning runs (2 marks).
+**Scalable supervised learning to study the Vulnerability of
+Resource-Constraint Internet of Things.**
+You will apply Random Forests, Logistic Regression (including regularisation) and (shallow)
+Neural networks over a subset of the dataset and over the full dataset. As performance
+measures use classification accuracy.
+1. Working with a subset of the larger dataset. Use pipelines and cross-validation to find the
+best configuration of parameters for each model [8 marks]
+a. For finding the best configuration of parameters, use 1% of the data chosen
+randomly from the training set [2 marks]
+b. Use a sensible grid for the parameters (for example, at least the three most relevant
+parameters with at least three options for each parameter) for each predictive
+model:
+i. Pipeline and cross-validation for random forests [2 marks]
+ii. Pipeline and cross-validation for logistic regression [2 marks]
+iii. Pipeline and cross-validation for neural networks [2 marks]
+Please, use the batch mode to work on this. Although the dataset is not as large, the
+batch mode allows queueing jobs and for the cluster to better allocate resources.
+2. Working with the larger dataset. Once you have found the best parameter configurations
+for each algorithm in the smaller subset of the data, use the full dataset to train on the
+whole training data and compare the performance of the three algorithms on the test data
+[8 marks]
+a. Use the best parameters found for each model in the smaller dataset of the
+previous step, for the models used in this step. You need to pass these parameters
+programmatically. Do not hard-code them. [2 marks]
+b. Provide accuracy, area under the curve, training time and testing time when using
+five CORES and ten CORES for each of the predictive models using
+train_5xor_128dim.csv for training and test_5xor_128dim.csv for testing.
+i. Five and ten cores results for random forests [2 marks]
+ii. Five and ten cores results for logistic regression [2 marks]
+iii. Five and ten cores results for neural networks [2 marks]
+Remember to use the batch mode to work on this.
+3. Discuss at least four observations (e.g., anything interesting), with two to three sentences
+for each observation. If you need to, you can run additional experiments that help you to
+provide these observations [4 marks] (one mark per observation)
+
 ```
 ### Assignment 2 (Log Mining and Analysis & Movie Recommendation and Analysis)
 ```markdown
