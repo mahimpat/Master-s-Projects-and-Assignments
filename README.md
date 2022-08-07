@@ -12,4 +12,4 @@ About Me - I am Mahim Patil, 24 years, from Hubli, India. I am currently pursuin
 ### - COM 6513 (Natural Language Processing) -> NLP
 ### - COM 6115 (Text Processing) -> TextProcessing
 ### - COM 6509 (Machine Learning and Adaptive Intelligence) -> ML
-
+### - Computer Science Engineering Projects -> Bachelor's Project
